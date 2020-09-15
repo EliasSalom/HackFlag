@@ -1,0 +1,16 @@
+[14-May-2020 11:54:22 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/demoarrj1n/public_html/Hackflag/Development/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/demoarrj1n/public_html/Hackflag/Development/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/demoarrj1n/public_html/Hackflag/Development/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/demoarrj1n/public_html/Hackflag/Development/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/demoarrj1n/public_html/Hackflag/Development/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/demoarrj1n/public_html/Ha in /home/demoarrj1n/public_html/Hackflag/Development/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+[14-May-2020 11:54:22 UTC] PHP Fatal error:  Uncaught ReflectionException: Class App\Http\Kernel does not exist in /home/demoarrj1n/public_html/Hackflag/Development/vendor/laravel/framework/src/Illuminate/Container/Container.php:803
+Stack trace:
+#0 /home/demoarrj1n/public_html/Hackflag/Development/vendor/laravel/framework/src/Illuminate/Container/Container.php(803): ReflectionClass->__construct('App\\Http\\Kernel')
+#1 /home/demoarrj1n/public_html/Hackflag/Development/vendor/laravel/framework/src/Illuminate/Container/Container.php(681): Illuminate\Container\Container->build('App\\Http\\Kernel')
+#2 /home/demoarrj1n/public_html/Hackflag/Development/vendor/laravel/framework/src/Illuminate/Container/Container.php(265): Illuminate\Container\Container->resolve('App\\Http\\Kernel', Array, false)
+#3 /home/demoarrj1n/public_html/Hackflag/Development/vendor/laravel/framework/src/Illuminate/Container/Container.php(799): Illuminate\Container\Container->Illuminate\Container\{closure}(Object(Illuminate\Foundation\Application), Array)
+#4 /home/demoarrj1n/public_html/Ha in /home/demoarrj1n/public_html/Hackflag/Development/vendor/laravel/framework/src/Illuminate/Container/Container.php on line 805
+[14-May-2020 11:54:26 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/demoarrj1n/public_html/Hackflag/Development/app/Http/Controllers/FrontController.php on line 14
+[14-May-2020 11:54:26 UTC] PHP Fatal error:  Class 'App\Http\Controllers\Controller' not found in /home/demoarrj1n/public_html/Hackflag/Development/app/Http/Controllers/FrontController.php on line 14
