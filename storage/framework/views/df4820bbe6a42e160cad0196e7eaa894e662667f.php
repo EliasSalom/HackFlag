@@ -1,0 +1,3 @@
+<?php echo $__env->make('includes.teacherheader', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+<?php echo $__env->yieldContent('content'); ?>
+<?php echo $__env->make('includes.teacherfooter', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\xampp\htdocs\hackflag\resources\views/layouts/teacher.blade.php ENDPATH**/ ?>
