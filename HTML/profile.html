@@ -1,0 +1,115 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300, 400,600,700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    
+
+
+    <title>Hackflag</title>
+  </head>
+  
+  <body onload="initialize()">
+
+  
+<canvas id="digitalRain"></canvas>
+
+
+<div class="maincontent">
+
+<div class="header">
+<ul>
+<li><a href="login.html" title="Login"><img src="images/login-icon.png" alt="" /></a></li>
+<li><a href="register.html" title="Registration"><img src="images/registration-icon.png" alt="" /></a></li>
+<li><a href="profile.html" title="Profile"><img src="images/profile-icon.png" alt="" /></a></li>
+<li><a href="about.html" title="About"><img src="images/about-icon.png" alt="" /></a></li>
+<li><a href="winner.html" title="Winner"><img src="images/winner-icon.png" alt="" /></a></li>
+</ul>
+</div>
+
+<div class="enterboxbg">
+<div class="row justify-content-center">
+<div class="col-md-8">
+
+<div class="pagebg">
+
+<div class="row">
+
+<div class="col-md-4">
+<div class="profileleft">
+<p class="mb-3"><img src="images/profile.jpg" alt="" /></p>
+<p><a href="#">Now Playing</a></p>
+<p><a href="#">Recent Activity<span>6</span></a></p>
+<p><a href="#">Change Password</a></p>
+</div>
+</div>
+
+<div class="col-md-8 text-left">
+
+<div class="profileright-top">
+<h1>Henry Bayle</h1>
+<p class="mb-3">DayZ100</p>
+</div>
+
+<div class="matchwon-row">
+<h3>Total Matches Won</h3>
+<span><img src="images/trophy.png" alt="" /> 2145</span>
+<a href="#" class="viewbtn">view more</a>
+</div>
+
+<div class="globediv">
+<div id="earth_div"></div>
+</div>
+
+<div class="matchwon-row">
+<h3>Now Playing</h3>
+<span>KNACK <sub>Monte Verde 40 Min.</sub></span>
+<a href="#" class="viewbtn">join game</a>
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+</div>
+</div>
+
+<div class="footer">© 2019  Hackflag . All rights reserved</div>
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+<script src="js/digitalrain.js"></script>
+
+
+<script src="js/api.js"></script>
+    <script>
+      function initialize() {
+        var options = {atmosphere: true, center: [0, 0], zoom: 0};
+        var earth = new WE.map('earth_div', options);
+        WE.tileLayer('http://tileserver.maptiler.com/nasa/{z}/{x}/{y}.jpg', {
+          minZoom: 0,
+          maxZoom: 5,
+          attribution: 'NASA'
+        }).addTo(earth);
+      }
+    </script>
+    
+    
+  </body>
+  
+  
+  
+</html>

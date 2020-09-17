@@ -1,0 +1,84 @@
+html{height:100%; overflow-x:hidden;}
+body {
+
+	font-family: 'Montserrat', sans-serif;
+	height:100%;
+	background:#172526;
+
+}
+@font-face {
+font-family: 'Aller';
+src: url('../fonts/ALLER_LT.eot');
+src: url('../fonts/ALLER_LT.eot?#iefix') format('embedded-opentype'), url('../fonts/ALLER_LT.svg#ALLER_LT') format('svg'), url('../fonts/aller.woff') format('woff'), url('../fonts/ALLER_LT.ttf') format('truetype'), url('../fonts/ALLER_LT.otf') format('truetype');
+font-weight: normal;
+font-style: normal;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+font-smoothing: antialiased;
+}
+a {
+	text-decoration:none;
+	-moz-transition: all .3s ease-in-out;
+ -webkit-transition: all .3s ease-in-out;
+ transition: all .3s ease-in-out;
+}
+
+canvas{position:fixed; top:0px; left:0px; height:100%; z-index:9;}
+
+.maincontent{width:100%; float:left; position:relative; top:0px; left:0px;}
+
+.header{padding:13px 15px; float:left; width:100%; background:url(../images/headerbg.png) no-repeat; background-size:auto 100%; text-align:center; position:relative; z-index:99;} 
+.header ul{padding:0px; margin:0px;}
+.header li{display:inline-block; vertical-align:middle; padding:0px 25px;}
+
+.enterboxbg{margin-top:50px; float:left; width:100%;}
+
+.enterbox{padding:55px 85px; background:rgba(132, 175, 16, 0.25); text-align:center; position:relative; z-index:99;}
+.gamecodebg{margin:85px 0px;}
+.gamecodebg label{font-size:30px; color:#fff; font-weight:300;}
+.gamecodebg-input{border:none; width:100%; border-bottom:solid 2px #fff; height:75px; background:none; outline:none; font-size:30px; color:#fff; font-weight:300; text-align:center;} 
+.joinbtn{color:#84af10; font-size:20px; text-transform:uppercase; outline:none; border:solid 1px #84af10; background:#000; padding:20px 0px; width:100%;}
+.joinbtn:hover{background:#84af10; color:#fff;}
+
+.footer{float:left; width:100%; text-align:center; padding:35px 15px; color:#a8db20; font-size:10px; text-transform:uppercase; font-weight:300; letter-spacing:1px; position:relative; z-index:99;}
+
+.pagebg{padding:55px; background:rgba(132, 175, 16, 0.25); text-align:center; position:relative; z-index:99;}
+.pagebg p{color:#fff; font-size:17px; margin:0px; text-align:left; font-weight:300;}
+
+.pagetable{width:100%; margin-top:45px;}
+.pagetable .table thead tr{background:rgba(132, 175, 16, 0.80);}
+.pagetable .table thead th{border-bottom:solid 3px #84af10; border-top:none; color:#e7e7e7; font-size:17px; font-weight:300; text-align:left;}
+.pagetable .table td{background:rgba(132, 175, 16, 0.44); font-size:15px; font-weight:300; text-align:left; color:#e7e7e7; border-bottom:solid 2px #84af10; padding:7px 15px;}
+
+#digitalRain {width:100%; height:100%;}
+
+@media only screen and (min-width: 960px) and (max-width: 1100px) {
+.pagetable{overflow-x:scroll;}
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.enterbox{padding:15px;}
+.logo{padding-top:30px;}
+.logo img{max-width:100%;}
+.pagetable{overflow-x:scroll;}
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+.header li img{width:45px;}
+.pagetable{overflow-x:scroll;}
+}
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+.header{background:#2c3e50;}
+.header li{padding:0px 15px;}
+.header li img{width:45px;}
+.logo img{max-width:100%;}
+.enterbox{padding:15px;}
+.pagetable{overflow-x:scroll;}
+}
+@media only screen and (max-width: 479px) {
+.header{background:#2c3e50;}
+.header li{padding:0px 5px;}
+.header li img{width:35px;}
+.logo img{max-width:100%;}
+.enterbox{padding:15px;}
+.gamecodebg label{font-size:20px;}
+.pagetable{overflow-x:scroll;}
+}

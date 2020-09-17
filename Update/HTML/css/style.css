@@ -1,0 +1,224 @@
+html{height:100%; overflow-x:hidden;}
+body {
+
+	font-family: 'Montserrat', sans-serif;
+	height:100%;
+	background:#172526;
+
+}
+
+a {
+	text-decoration:none;
+	-moz-transition: all .3s ease-in-out;
+ -webkit-transition: all .3s ease-in-out;
+ transition: all .3s ease-in-out;
+}
+
+canvas{position:fixed; top:0px; left:0px; height:100%; z-index:9;}
+
+.maincontent{width:100%; float:left; position:relative; top:0px; left:0px;}
+
+.header{padding:13px 15px; float:left; width:100%; background:url(../images/headerbg.png) no-repeat; background-size:auto 100%; text-align:center; position:relative; z-index:99;} 
+.header ul{padding:0px; margin:0px;}
+.header li{display:inline-block; vertical-align:middle; padding:0px 25px;}
+
+.enterboxbg{margin-top:50px; float:left; width:100%;}
+
+.enterbox{padding:55px 85px; background:rgba(89, 118, 10, 0.90); text-align:center; position:relative; z-index:99;}
+.gamecodebg{margin:85px 0px;}
+.gamecodebg label{font-size:30px; color:#fff; font-weight:300;}
+.gamecodebg-input{border:none; width:100%; border-bottom:solid 2px #fff; height:75px; background:none; outline:none; font-size:30px; color:#fff; font-weight:300; text-align:center;} 
+.joinbtn{color:#84af10; font-size:20px; text-transform:uppercase; outline:none; border:solid 1px #84af10; background:#000; padding:20px 0px; width:100%;}
+.joinbtn:hover{background:#84af10; color:#fff;}
+
+.footer{float:left; width:100%; text-align:center; padding:35px 15px; color:#a8db20; font-size:10px; text-transform:uppercase; font-weight:300; letter-spacing:1px; position:relative; z-index:99;}
+
+.pagebg{padding:55px; background:rgba(89, 118, 10, 0.90); text-align:center; position:relative; z-index:99;}
+.pagebg p{color:#fff; font-size:17px; margin:0px; text-align:left; font-weight:300;}
+
+.pagetable{width:100%; margin-top:45px;}
+.pagetable .table thead tr{background:rgba(132, 175, 16, 0.80);}
+.pagetable .table thead th{border-bottom:solid 3px #84af10; border-top:none; color:#e7e7e7; font-size:17px; font-weight:300; text-align:left;}
+.pagetable .table td{background:rgba(132, 175, 16, 0.44); font-size:15px; font-weight:300; text-align:left; color:#e7e7e7; border-bottom:solid 2px #84af10; padding:7px 15px; vertical-align:middle;}
+
+#digitalRain {width:100%; height:100%;}
+
+
+.loginform h1{color:#fff; font-size:30px; padding-bottom:25px; border-bottom:solid 2px #fff; text-align:left; margin:0 0 40px 0px;}
+.loginform label{color:#fff; text-align:left; font-weight:400; display:block;}
+.loginform .form-control{background:none; border-radius:0px; border:solid 2px #fff; color:#fff; height:60px;}
+
+.forgotpass{color:#fff;}
+.forgotpass a{color:#fff; text-decoration:underline;}
+.forgotpass a:hover{color:#fff; text-decoration:none;}
+
+.user-profile h1{color:#fff; font-size:30px; padding-bottom:25px; border-bottom:solid 2px #fff; text-align:left; margin:0 0 40px 0px;}
+.profilepic img{max-width:100%; border:solid 1px #fff; padding:5px;}
+.profilepic h4{color:#fff; margin:0px; padding:10px 0px;}
+
+.profileinfo h3{color:#fff; text-align:left; margin:0 0 20px 0px;} 
+.profileinfo p{color:#fff; font-size:17px;}
+.profileinfo p label{width:30%;}
+
+.editbtn{color:#84af10; font-size:16px; outline:none; border:solid 1px #84af10; background:#000; padding:10px 25px; display:inline-block;}
+.editbtn:hover{background:#84af10; color:#fff; text-decoration:none;}
+
+.winnerimg{border-radius:50%; width:50px; height:50px; padding:3px; border:solid 1px #fff;}
+
+.profileleft p{font-size:15px; color:#fff; font-weight:300;}
+.profileleft p img{width:100%;}
+.profileleft p span{display:inline-block; padding:5px 10px; background:#fff; border-radius:5px; color:#516b0a; float:right;}
+.profileleft p a{color:#fff;}
+
+.profileright-top h1{color:#fff; font-size:28px; font-weight:300;}
+.profileright-top p{color:#fff; font-size:14px; font-weight:300;}
+
+.matchwon-row{background:#5c7810; border-radius:5px; padding:12px 20px;}
+.matchwon-row h3{color:#fff; font-size:20px; display:inline-block; font-weight:300; padding-right:22px;}
+.matchwon-row span{color:#fff; font-size:15px; display:inline-block; font-weight:300;}
+.matchwon-row span sub{color:#99bf31; font-size:12px; display:block;}
+
+.viewbtn{display:inline-block; float:right; padding:5px 13px; border-radius:5px; font-weight:300; font-size:13px; background:#3a4c0a; color:#fff; text-transform:uppercase; margin-top:3px;}
+.viewbtn:hover{color:#3a4c0a; background:#fff; text-decoration:none;}
+
+.globediv{padding:0px; text-align:center; background:#465d08; margin:13px 0px; border-radius:5px; position:relative;}
+
+#earth_div{top: 0; right: 0; bottom: 0; left: 0;}
+
+#earth_div canvas{top:0px; left:0px; width:200px; height:200px; position:inherit;}
+.cesium-credit-textContainer{display:none;}
+
+/*250420*/
+
+.gamebg {padding: 55px; background: rgba(89, 118, 10, 0.90); position: relative; z-index: 99; float: left;}
+.new-gameinfo{width: 100%; float: left; background: rgba(132, 175, 16, 0.44); padding: 15px;}
+.gamepic{width: 100%; float: left;}
+.gamepic img{width: 100%; min-height: 225px; float: left;}
+
+.gameinfoleft{width: 100%; padding-top: 10px; float: left;}
+.gameinfoleft p{color:#fff; font-size:17px; margin:0px;}
+.gameinfoleft p label{width:30%;}
+
+.gamedetaisinfo{width: 100%; padding: 15px; background: rgba(132, 175, 16, 0.44); margin:25px 0px 0px;  float: left;}
+.gamebox{width: 100%; margin-bottom: 15px; float: left;}
+.gameboximg{width: 100%; float: left;}
+.gameboximg img{width: 100%; min-height: 225px; float: left;}
+.gameboxshow{width: 100%; padding-top: 10px; float: left;}
+.gameboxshow p{color:#fff; font-size:13px; margin:0px;}
+.gameboxshow p label{width:45%;}
+
+
+
+
+@media only screen and (min-width: 960px) and (max-width: 1100px) {
+.pagetable{overflow-x:scroll;}
+.matchwon-row{float:left; width:100%; text-align:center;}
+.matchwon-row h3{padding:0px; display:block;}
+.matchwon-row span{display:block; padding:10px 0px;}
+.viewbtn{float:none;}
+.globediv{float:left; width:100%;}
+
+/*250420*/
+
+.gamepic img {min-height: 180px;}
+.gameinfoleft p label {width: 40%;}
+.gameinfoleft p {color: #fff; font-size: 15px;}
+.gameboximg img {min-height: 180px;}
+.gameboxshow p label {width: 100%; text-align: center; padding-bottom: 0px; margin-bottom: 0px;}
+.gameboxshow p {color: #fff; font-size: 15px; margin: 0px; text-align: center;}
+
+
+
+}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+.enterbox{padding:15px;}
+.logo{padding-top:30px;}
+.logo img{max-width:100%;}
+.pagetable{overflow-x:scroll;}
+.editbtn{display:block; margin:5px 0px; text-align:center;}
+.profileinfo p{font-size:14px;}
+.pagebg{padding:25px;}
+.matchwon-row{float:left; width:100%; text-align:center;}
+.matchwon-row h3{padding:0px; display:block;}
+.matchwon-row span{display:block; padding:10px 0px;}
+.viewbtn{float:none;}
+.globediv{float:left; width:100%;}
+.profileleft p{font-size:13px;}
+
+/*250420*/
+
+.gameinfoleft p label {width: 45%;}
+.gameboximg img {min-height: 175px;}
+.gameboxshow p label {width: 100%; text-align: center; padding-bottom: 0px; margin-bottom: 0px;}
+.gameboxshow p {color: #fff; font-size: 15px; margin: 0px; text-align: center;}
+
+
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+.header li img{width:45px;}
+.pagetable{overflow-x:scroll;}
+.profileright-top{margin-top:25px;}
+.matchwon-row{float:left; width:100%; text-align:center;}
+.matchwon-row h3{padding:0px; display:block;}
+.matchwon-row span{display:block; padding:10px 0px;}
+.viewbtn{float:none;}
+.globediv{float:left; width:100%;}
+
+/*250420*/
+.gameinfoleft p label {width: 45%;}
+.gameboxshow p {color: #fff; font-size: 17px;}
+.gameboximg img {width: 100%; min-height: auto;}
+.gamepic img {width: 100%; min-height: auto;}
+
+}
+@media only screen and (min-width: 480px) and (max-width: 599px) {
+.header{background:#2c3e50;}
+.header li{padding:0px 15px;}
+.header li img{width:45px;}
+.logo img{max-width:100%;}
+.enterbox{padding:15px;}
+.pagetable{overflow-x:scroll;}
+.profileright-top{margin-top:25px;}
+.matchwon-row{float:left; width:100%; text-align:center;}
+.matchwon-row h3{padding:0px; display:block;}
+.matchwon-row span{display:block; padding:10px 0px;}
+.viewbtn{float:none;}
+.globediv{float:left; width:100%;}
+
+/*250420*/
+.gameinfoleft p label {width: 45%;}
+.gameboxshow p {color: #fff; font-size: 17px;}
+.gameboximg img {width: 100%; min-height: auto;}
+.gamepic img {width: 100%; min-height: auto;}
+
+
+
+}
+@media only screen and (max-width: 479px) {
+.header{background:#2c3e50;}
+.header li{padding:0px 5px;}
+.header li img{width:35px;}
+.logo img{max-width:100%;}
+.enterbox{padding:15px;}
+.gamecodebg label{font-size:20px;}
+.pagetable{overflow-x:scroll;}
+.editbtn{display:block; margin:5px 0px; text-align:center;}
+.profileright-top{margin-top:25px;}
+.matchwon-row{float:left; width:100%; text-align:center;}
+.matchwon-row h3{padding:0px; display:block;}
+.matchwon-row span{display:block; padding:10px 0px;}
+.viewbtn{float:none;}
+.globediv{float:left; width:100%;}
+
+
+/*250420*/
+.gameboxshow p label {width: 100%; text-align: center; margin-bottom: 0px;}
+.gameboxshow p {color: #fff; font-size: 16px; margin: 0px; text-align: center; width: 100%;}
+.gameinfoleft p label {width: 100%; margin: 0px;}
+.gameinfoleft p {font-size: 16px; text-align: center;}
+.gameboximg img {width: 100%; min-height: auto;}
+.gamepic img {width: 100%; min-height: auto;}
+
+
+
+}
